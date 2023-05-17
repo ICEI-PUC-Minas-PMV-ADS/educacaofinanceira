@@ -1,0 +1,43 @@
+.menuInteracao {
+
+}
+
+.pag1,
+.pag2,
+.pag3,
+.pag4 {
+    flex-basis: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pag1 img,
+.pag2 img,
+.pag3 img,
+.pag4 img {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.pag1 h2,
+.pag2 h2,
+.pag3 h2,
+.pag4 h2,
+.pag1 p,
+.pag2 p,
+.pag3 p,
+.pag4 p {
+    font-size: 14px;
+}
+
+.container1 {
+    display: inline-block;
+    width: 22%;
+}
+
+.container2 {
+    display: inline-block;
+    width: 22%;
+}
