@@ -1,0 +1,61 @@
+/*Reset padrão CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Definições padrão */
+:root {
+    --corPadraoAzul: #add8e6;
+    --corPadraoAzulClaro: #bbd5dd;
+    --corPadraoAzulEscuro: #2b94b8;
+    --corPadraoPreto: #000000;
+    --corPadraoBranco: #fbfeff;
+    --corPadraoCinza: #7b7a7b;
+    --fontTitle: #000000;
+    --legend: #000000;
+    font-family: 'Open+Sans', sans-serif;
+}
+
+/* Componente que abrange conteúdo */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--corPadraoAzulEscuro);
+    color: var(--corPadraoAzulClaro);
+    -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
+    font-size: 0.8rem;
+}
+
+#footerImg {
+    height: 90vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+#footerSpan {
+    color: var(--corPadraoAzulClaro);
+    padding: 15px 0 0 0;
+    transition: transform 0.3s ease-in-out;
+    font-size: 0.8rem;
+}
+
+#footerI {
+    color: var(--corPadraoAzulClaro);
+    padding: 12px 0 0 0;
+    transition: transform 0.3s ease-in-out;
+    /* height: 10vh; */
+    font-size: 1.3rem;
+}
+
+.footerHover:hover{
+    transform: scale(1.2);
+}
+/*Fim padrão*/
+
