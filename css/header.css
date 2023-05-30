@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open+Sans', sans-serif;
+    background-color: var(--corPadraoAzul);
+    border-radius: 10px;
+}
+.logo{
+    width: 110px;
+    height: 76px;
+    background-color: var(--corPadraoAzulEscuro);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--corPadraoAzulEscuro);
+    box-shadow: 0 0 1rem #000000;
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+    
+}
+:root {
+    --corPadraoAzul: #add8e6;
+    --corPadraoAzulClaro: #bbd5dd;
+    --corPadraoAzulEscuro: #2b94b8;
+    --corPadraoPreto: #000000;
+    --corPadraoBranco: #fbfeff;
+    --corPadraoCinza: #7b7a7b;
+    --fontTitle: #000000;
+    --legend: #000000;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+ul{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+li{
+    color: #000000;
+    list-style-type: none;
+    padding-left: 1rem;
+    box-sizing: border-box ;
+}
+a{
+ text-decoration: none;   
+
+}
+@media screen and (max-width: 466px){
+    
+    
+}
+
+
+
+
