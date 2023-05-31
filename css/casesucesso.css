@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --corPadraoAzul: #add8e6;
+    --corPadraoAzulClaro: #bbd5dd;
+    --corPadraoAzulEscuro: #2b94b8;
+    --corPadraoPreto: #000000;
+    --corPadraoBranco: #fbfeff;
+    --corPadraoCinza: #7b7a7b;
+    --fontTitle: #000000;
+    --legend: #000000;  
+}
+body{
+    background-image: linear-gradient(to bottom, white, #add8e6);
+    font-family: 'Open+Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #000000;
+}
+header{
+    background-color: (--corPadraoAzul);
+    width:100%;
+    height:100px;  
+}
+.Menu{
+    display: block;
+    width: 100%;
+    background-color: #DDD;
+}
+.header{
+    width: 100%;  
+    height: 70px;  
+}
+#container{
+    width: 100%;
+    height: 80vh;
+}
+#intro{
+    text-align: center;
+    height: 10vh;
+    padding: 20px;
+    clear: both;
+}
+#intro h1{
+    padding-bottom: 20px;
+}
+#depo{
+    display: flex;
+    width: 80%;
+    height: 30vh;
+    margin: 0px auto;
+}
+#depo1{
+    display: block;
+    float: left;
+    width: 45%;
+    height: 30vh;
+    margin: 0px auto;
+    -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
+}
+#depo1 img{
+    display: block;
+    float: left;
+    width: 30%;
+    height: 27vh;
+    padding: 8px;
+}
+#depo1 p{
+    display: block;
+    float: right;
+    width: 64%;
+    height: 30vh;
+    padding: 5px;
+    line-height: 1.3;
+}
+#depo2{
+    display: block;
+    float: left;
+    width: 45%;
+    height: 28vh;
+    margin: 0px auto;
+    padding: 5px;
+    -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
+}
+#depo2 iframe{
+    display: block;
+    float: left;
+    width: 67%;
+    height: 27vh;
+}
+#depo2 p{
+    display: block;
+    float: right;
+    width: 28%;
+    height: 25vh;
+    text-align: start;
+    padding: 5px;
+    line-height: 1.3;
+}
+h2{
+    color: var(--corPadraoCinza);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+#parceiros{
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-evenly;
+}
+#parc1{
+    width: 70%;
+    height: 10vh;
+}
+#parc2{
+    width: 70%;
+    height: 10vh;
+}
+#parc3{
+    width: 120%;
+    height: 10vh;
+}
+  @media(max-width: 480px){
+
+}
