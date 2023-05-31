@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+  font-family: 'Open+Sans', sans-serif;
+}
+body{
+   background-image: linear-gradient(to bottom, white, #add8e6);
+  }
+  :root {
+    --corPadraoAzul: #add8e6;
+    --corPadraoAzulClaro: #bbd5dd;
+    --corPadraoAzulEscuro: #2b94b8;
+    --corPadraoPreto: #000000;
+    --corPadraoBranco: #fbfeff;
+    --corPadraoCinza: #7b7a7b;
+    --fontTitle: #000000;
+    --legend: #000000;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+  .pag1,
+  .pag2,
+  .pag3,
+  .pag4 {
+    flex-basis: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pag1 img,
+  .pag2 img,
+  .pag3 img,
+  .pag4 img {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+  }
+  
+  .pag1 h2,
+  .pag2 h2,
+  .pag3 h2,
+  .pag4 h2,
+  .pag1 p,
+  .pag2 p,
+  .pag3 p,
+  .pag4 p {
+    font-size: 10px;
+  }
+  
+  .menuInteracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container1,
+.container2 {
+    width: 22%;
+    padding: 10px;
+}
+.logo {
+    max-width: 100px;
+    max-height: 75px;
+}
+.header{
+  width: 100%;
+  height: 3.4rem;
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  text-decoration: underline black;
+}
+a:visited{
+  color:black
+}
+a:link{
+  color:black
+}
