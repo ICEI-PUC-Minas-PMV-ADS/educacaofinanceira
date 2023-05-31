@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --corPadraoAzul: #add8e6;
+    --corPadraoAzulClaro: #bbd5dd;
+    --corPadraoAzulEscuro: #2b94b8;
+    --corPadraoPreto: #000000;
+    --corPadraoBranco: #fbfeff;
+    --corPadraoCinza: #7b7a7b;
+    --fontTitle: #000000;
+    --legend: #000000;  
+}
+h2{
+    color: var(--corPadraoCinza);
+}
+body{
+    background-image: linear-gradient(to bottom, white, #add8e6);
+    font-family: 'Open+Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #000000;
+}
+header{
+    background-color: (--corPadraoAzul);
+    width:100%;
+    height:100px;  
+}
+main{
+    height: max-content;
+}
+#container{
+    display: flex;
+}
+.Menu{
+    display: block;
+    width: 100%;
+    background-color: #DDD;
+}
+#conteudo{
+    display: block;
+    float: left;
+    width: 55%;
+    height: 30vh;
+    margin: 20px;
+}
+#imagem{
+    display: block;
+    float: left;
+    width: 16%;
+    height: 30vh;
+    margin: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
+
+}
+aside{
+    display: block;
+    float: right;
+    width: 16%;
+    height: 67vh;
+    margin: 20px;
+}
+main iframe{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 30vh;
+    margin: 20px;    
+}
+#conteudo2{
+    display: block;
+    float: right;
+    width: 50%;
+    height: 30vh;
+    margin: 20px;
+}
+.header{
+    width: 100%;  
+    height: 70px;  
+  }
+
+  @media screen {
+    (max-width: 480px)
+    
+  }
