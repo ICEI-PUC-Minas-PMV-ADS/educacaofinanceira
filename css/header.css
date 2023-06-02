@@ -37,8 +37,10 @@ header{
 }
 ul{
     display: flex;
-    width: 60%;
+    width: 74%;
     flex-wrap: wrap;
+    margin-top: 1%;
+    font-size: 0.8rem;
 }
 li{
     color: #000000;
@@ -48,11 +50,15 @@ li{
 }
 a{
  text-decoration: none;   
-
 }
-@media screen and (max-width: 466px){
-    
-    
+a:hover{
+    text-decoration: underline black;
+}
+div{
+    position: absolute;
+    top: 6%;
+    left: 76%;
+    background-color: var(--corPadraoAzulEscuro);
 }
 
 
