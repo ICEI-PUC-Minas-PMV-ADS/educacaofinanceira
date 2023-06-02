@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Augusto Mendes do Espírito Santo">
+    <meta name="description" content="Eduação Finaneira Web site">
+    <meta name="keywords" content="html, css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
     <link rel="stylesheet" href="css/desvantagens.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
-    <title>Desvantagens</title>
+    <link rel="stylesheet" href="css/acessibilidadeFonte.css">
+    <Title>Desvantagens</Title>
 </head>
 <header>
     <iframe src="header.html" frameborder="0" class="header"></iframe>
@@ -25,14 +29,14 @@
             </div>
             <div id="box">
                 <div class="box2">
-                    <p class="box-content">
-                        <h3>Malefícios à saúde</h3>
+                    <h2>Malefícios à saúde</h2>
+                    <p class="box-content"></p>
                         Uma pesquisa americana, da PFEEF (2012), traz as implicações do estresse financeiro para a saúde: 29% das pessoas que têm problemas financeiros sofrem de ansiedade aguda e 23% tiveram depressão profunda, ambos contra 4% das pessoas que têm o orçamento organizado. Outro dado relevante é que 44% de pessoas com problemas financeiros sofrem de enxaqueca ou outras dores de cabeça contra 15% dos indivíduos que possuem as contas em dia; e 27% tiveram úlceras ou outro problema no aparelho digestivo, contra 8% dos planejados financeiramente. Veja a imagem abaixo.            
-                         </p>  
+                    </p>  
                     <img src="img/desvantagens01.jpg" alt="Saude_x_Gestao">                                
                 </div>
-                <div class="box2">
-                    <h3>"Nome sujo"</h3>
+                <div class="box2" id="nome-sujo">
+                    <h2>"Nome sujo"</h2>
                     <p class="box-content">A facilidade de acesso ao crédito e a cultura do consumo podem levar as pessoas a gastar além de suas possibilidades, acumulando dívidas que se tornam difíceis de gerenciar. Estas dívidas, se não pagas, ocasionam no que chamamos de inadimplência. A principal consequência da inadimplência é ter o nome apontado nos serviços de proteção ao crédito ou, como é popularmente conhecido, ficar com o “nome sujo“. Mas quais são as consequência de ter o nome sujo? O vídeo a seguir irá explicar melhor sobre este status que assombra milhões de Brasileiros.</p>
                     <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/7s6BYEMgHZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -55,9 +59,25 @@
         </aside>
     </main>
 
-<!--Início Rodapé-->
-<iframe src="footer.html" frameborder="0" class="footer"></iframe>
-<!-- Fim Rodapé -->
-       
+    <!--Início R02-Libras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <!--Fim R02-Libras-->
+
+    <!--Início R03-aumentar e diminuir fonte-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/acessibilidadeFonte.js"></script>
+    <!--Fim  R03-aumentar e diminuir fonte-->
+
+    <!--Início Rodapé-->
+    <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+    <!-- Fim Rodapé -->
+    
 </body>
 </html>
