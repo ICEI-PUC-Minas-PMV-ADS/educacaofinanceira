@@ -135,4 +135,60 @@ div.box2 > iframe {
     text-align: left;
     display: block;
   }
+
+  @media(max-width: 950px){
+    main{
+        width: 100%;        
+    }
+
+    #box{
+        display: flex;
+        flex-direction: column;
+    }
+    .box2,
+    #intro{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     
+    #box > div#nome-sujo,
+    div.box2 > img{
+        margin-top: 5px;
+        width: 123%;
+        padding: 0;
+    }
+    
+    .video-container {
+        position: relative;
+        padding-bottom: 66.25%;
+        height: 0;
+        overflow: hidden;
+        margin-top: 5px;
+        width: 100%;    
+    }
+}
+
+@media(max-width: 650px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-content{
+        margin: 5px;
+        width: 98%;
+    }
+    #box > div#nome-sujo,
+    div.box2 > img{
+        width: 100%;
+    }
+    aside{
+        width: 98%;
+        padding: 0;
+        margin: 5px;
+    }
+    aside h3{
+        text-align: center;
+    }
+
+}
