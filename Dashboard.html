@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
-    <link rel="stylesheet" href="css/footer.css">
+    <meta name="author" content="Matheus Soares da Silva">
+    <meta name="description" content="Eduação Finaneira Web site">
+    <meta name="keywords" content="html, css">
+    <title>Educação Financeira</title>
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/Dashboard.css">
     <link rel="stylesheet" href="css/header.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -17,130 +20,153 @@
 
 <body>
     <header>
-        <iframe src="header.html" frameborder="0" class="header"></iframe>
+        <header>
+            <img src="img/Rich Preto.png" alt="" class="logo">
+            <ul id="lista-cabecalho">
+
+                <li class="opcao-cabecalho"> <a style="text-decoration: none !important; color: #000000 !important;"
+                        class="link-opcao" href="index.html">Home</a></li>
+
+                <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                        class="link-opcao" href="Dashboard.html">Dashboard</a></li>
+
+                <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                        class="link-opcao" href="vantagens.html">Vantagens</a></li>
+
+                <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                        class="link-opcao" href="desvantagens.html">Desvantagens</a></li>
+
+                <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                        class="link-opcao" href="casessucesso.html">Cases de Sucesso</a></li>
+                <li class="opcao-acessibilidade">
+                    <button class="btn-acessibility" onClick="aumentarFonte();"><img src="A+" alt="">+</button>
+
+                    <button class="btn-acessibility" onClick="diminuirFonte();"><img src="A-" alt="">-</button>
+                </li>
+            </ul>
+        </header>
     </header>
     <main>
         <h2>Despesas fixas</h2>
-        <div id="fixas">
+        <section id="fixas">
             <div>
-                <h4>Moradia</h4>
+                <h2>Moradia</h2>
                 <img src="img/Dashboard7.png" alt="">
                 <input id="num1" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Saúde</h4>
+                <h2>Saúde</h2>
                 <img src="img/Dashboard6.png" alt="">
                 <input id="num2" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Transporte</h4>
+                <h2>Transporte</h2>
                 <img src="img/Dashboard1.png" alt="">
                 <input id="num3" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Higiene</h4>
+                <h2>Higiene</h2>
                 <img src="img/Dashboard8.png" alt="">
                 <input id="num4" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Alimentação</h4>
+                <h2>Alimentação</h2>
                 <img src="img/Dashboard12.png" alt="">
                 <input id="num5" type="number" placeholder="R$ 0,00">
             </div>
-        </div>
+        </section>
 
         <h2>Despesas variáveis</h2>
-        <div id="variaveis">
+        <section id="variaveis">
             <div>
-                <h4>Compras</h4>
+                <h2>Compras</h2>
                 <img src="img/Dashboard10.png" alt="">
                 <input id="num6" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Vestuário</h4>
+                <h2>Vestuário</h2>
                 <img src="img/Dashboard4.png" alt="">
                 <input id="num7" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Educação</h4>
+                <h2>Educação</h2>
                 <img src="img/Dashboard3.png" alt="">
                 <input id="num8" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Entretenimento</h4>
+                <h2>Entretenimento</h2>
                 <img src="img/Dashboard2.png" alt="">
                 <input id="num9" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Viagens</h4>
+                <h2>Viagens</h2>
                 <img src="img/Dashboard14.png" alt="">
                 <input id="num10" type="number" placeholder="R$ 0,00">
             </div>
-        </div>
+        </section>
 
         <h2>Renda</h2>
-        <div id="renda">
+        <section id="renda">
             <div>
-                <h4>Sálario</h4>
+                <h2>Sálario</h2>
                 <img src="img/Dashboard13.png" alt="">
                 <input id="num11" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Bonificações</h4>
+                <h2>Bonificações</h2>
                 <img src="img/Dashboard9.png" alt="">
                 <input id="num12" type="number" placeholder="R$ 0,00">
             </div>
             <div>
-                <h4>Investimentos</h4>
+                <h2>Investimentos</h2>
                 <img src="img/Dashboard11.png" alt="">
                 <input id="num13" type="number" placeholder="R$ 0,00">
             </div>
-        </div>
+        </section>
 
 
-        <div id="graf1">
+        <section id="graf1">
             <div id="copo2">
                 <p id="resultado"></p>
-                <h3>Sua renda total</h3>
+                <h2>Sua renda total</h2>
                 <canvas id="Rosca2"></canvas>
             </div>
             <div id="copo6">
                 <div id="popup">
-                    <h3 id="mensagem"></h3>
-                    <img src="img/Dashboard5.png">
+                    <h2 id="mensagem"></h2>
+                    <img id="mural" src="img/Dashboard5.png">
                 </div>
             </div>
             <div id="copo1">
                 <p id="resultado1"></p>
-                <h3>Suas despesas totais</h3>
+                <h2>Suas despesas totais</h2>
                 <canvas id="Rosca1"></canvas>
             </div>
-        </div>
+        </section>
 
-
-        <div id="graf2">
-            <h3>Percentual de endividamento</h3>
+        <h2>Relação de endividamento</h2>
+        <section id="graf2">
             <div id="copo3">
-                <canvas id="Barra" style="width: 1200px;" height="120px"></canvas>
-                <h6>Suas despesas não devem ultrapassar 80% da sua renda</h6>
+                <canvas id="Barra" style="width: 1100px;" height="120px"></canvas>
+                <h2>Suas despesas não devem ultrapassar 80% da sua renda</h2>
             </div>
 
             <div id="copo4">
-                <canvas id="Barra1" style="width: 1200px;" height="120px"></canvas>
-                <h6>Suas despesas fixas não devem ultrapassar 50% das suas despesas</h6>
+                <canvas id="Barra1" style="width: 1100px;" height="120px"></canvas>
+                <h2>Suas despesas fixas não devem ultrapassar 50% das suas despesas</h2>
             </div>
 
             <div id="copo5">
-                <canvas id="Barra2" style="width: 1200px;" height="120px"></canvas>
-                <h6>Suas despesas variáveis não devem ultrapassar 30% das suas despesas</h6>
+                <canvas id="Barra2" style="width: 1100px;" height="120px"></canvas>
+                <h2>Suas despesas variáveis não devem ultrapassar 30% das suas despesas</h2>
             </div>
-        </div>
+        </section>
     </main>
 
 
-    <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+    <iframe src="/Head e Foot/footer.html" frameborder="0" class="footer"></iframe>
 
-    <script src="js/Dashboard.js"></script>
+    <script src="Dashboard.js"></script>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -152,4 +178,10 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+
+    <!--Início R03-aumentar e diminuir fonte-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/acessibilidadeFonte.js"></script>
 </body>
+
+</html>>
