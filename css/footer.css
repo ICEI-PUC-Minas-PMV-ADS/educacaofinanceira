@@ -27,7 +27,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     background-color: var(--corPadraoAzulEscuro);
     color: var(--corPadraoAzulClaro);
     -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
