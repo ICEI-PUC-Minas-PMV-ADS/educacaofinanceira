@@ -12,9 +12,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     </style>
     <title>Educação Financeira</title>
-    <link rel="stylesheet" href="css/vantagens.css">
     <link rel="stylesheet" href="css/footer.css">
-</head>
+    <link rel="stylesheet" href="css/acessibilidadeFonte.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/vantagens.css">
+   </head>
 
 <body>
    <header class="menu1">
@@ -155,16 +157,19 @@
         </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
     <!--Fim R02-Libras-->
 
-    <!-- Início Rodapé -->
+    <!--Início R03-aumentar e diminuir fonte-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/acessibilidadeFonte.js"></script>
+    <!--Fim  R03-aumentar e diminuir fonte-->
+        
+    <script src="js/header.js"></script>
 
+    <!-- Início Rodapé -->
     <iframe src="footer.html" frameborder="0" class="footer"></iframe>
     <!-- Fim Rodapé -->
-    <script src="js/header.js"></script>
 </body>
 
 </html>
