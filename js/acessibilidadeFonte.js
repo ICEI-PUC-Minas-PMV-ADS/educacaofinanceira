@@ -3,7 +3,7 @@ function aumentarFonte() {
     var elemento = $('p, h3, h4');
     var fonteAtual = parseInt(elemento.css('font-size'));
     var novoTamanho = fonteAtual + 2;
-    if (novoTamanho <= 14) {
+    if (novoTamanho <= 16) {
         elemento.css('font-size', novoTamanho + 'px');
     }
 }
