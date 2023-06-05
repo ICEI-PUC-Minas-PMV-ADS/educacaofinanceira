@@ -29,7 +29,6 @@ header {
     background-color: var(--corPadraoAzulEscuro);
     box-shadow: 0 0 1rem #000000;
     flex-wrap: wrap;
-    border-radius: 10px;
     transition: none;
 }
 
@@ -50,7 +49,6 @@ header {
     box-sizing: border-box !important;
     transition: none !important;
 }
-
 .opcao-cabecalho:hover {
     background-color: var(--corPadraoAzul) !important;
     transition: none !important;
