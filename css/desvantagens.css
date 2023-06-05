@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     
-    
 
 }
 :root {
@@ -14,9 +13,6 @@
     --corPadraoCinza: #7b7a7b;
     --fontTitle: #000000;
     --legend: #000000;
-    font-family: 'Open+Sans', sans-serif;
-    line-height: 1.5;
-    
 }
 
 .header{
@@ -27,7 +23,8 @@ height: 70px;
 
 body{
     background-image: linear-gradient(to bottom, white, #add8e6);
-    height: 100%;    
+    height: 100%;
+    font-family: 'Open+Sans', sans-serif;
 }
 
 main{
@@ -138,13 +135,6 @@ div.box2 > iframe {
   @media(max-width: 950px){
     main{
         width: 100%;        
-    }
-    #main-content{
-        margin: 5px;
-        width: 98%;
-    }
-    aside{
-        margin-left: 25px;
     }
 
     #box{
