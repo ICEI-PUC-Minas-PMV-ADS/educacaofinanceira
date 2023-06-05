@@ -26,7 +26,6 @@
 
 header {
     display: flex;
-    justify-content: space-between;
     background-color: var(--corPadraoAzulEscuro);
     box-shadow: 0 0 1rem #000000;
     flex-wrap: wrap;
@@ -41,6 +40,8 @@ header {
     font-size: 0.8rem !important;
     transition: none !important;
 }
+
+#lista-responsive {}
 
 .opcao-cabecalho {
     color: #000000 !important;
@@ -78,12 +79,55 @@ header {
     color: #000000 !important;
     transition: none !important;
 }
+
 .btn-acessibility {
     width: 20px;
-  height: 20px;
-  background-color: var(--corPadraoAzul);
-  border: none;
-  border-radius: 100%;
-  color: var(--corPadraoAzulEscuro);
-  transition: none;
-  }
+    height: 20px;
+    background-color: var(--corPadraoAzul);
+    border: none;
+    border-radius: 100%;
+    color: var(--corPadraoAzulEscuro);
+    transition: none;
+}
+
+@media (min-width:1110px) {
+    .menu-response {
+        display: none;
+    }
+
+    .menu1 {
+        justify-content: space-between;
+    }
+}
+
+
+
+@media (max-width:1109px) {
+    .menu1 {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    .dropdown span {
+        display: block;
+        width: 36px;
+        height: 2px;
+        background-color: black;
+        margin-bottom: 5px;
+
+    }
+    button.dropdown {
+        background-color: #2b94b8;
+        border: none;
+    }
+.opcaodrop{
+    display:none;
+}
+.dropitens:hover{
+ background-color: var(--corPadraoAzulEscuro)
+
+}
+}
