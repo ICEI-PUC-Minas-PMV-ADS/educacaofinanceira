@@ -16,8 +16,54 @@
     <link rel="stylesheet" href="css/acessibilidadeFonte.css">
     <Title>Desvantagens</Title>
 </head>
-<header>
-    <iframe src="header.html" frameborder="0" class="header"></iframe>
+<header class="menu1">
+    <img src="img\Rich Preto.png" alt="" class="logo">
+    <ul id="lista-cabecalho">
+
+        <li class="opcao-cabecalho"> <a style="text-decoration: none !important; color: #000000 !important;"
+                class="link-opcao" href="index.html">Home</a></li>
+
+        <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                class="link-opcao" href="Dashboard.html">Dashboard</a></li>
+
+        <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                class="link-opcao" href="vantagens.html">Vantagens</a></li>
+
+        <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                class="link-opcao" href="desvantagens.html">Desvantagens</a></li>
+
+        <li class="opcao-cabecalho"><a style="text-decoration: none !important; color: #000000 !important;"
+                class="link-opcao" href="casesucesso.html">Cases de Sucesso</a></li>
+        <li class="opcao-acessibilidade">
+            <button class="btn-acessibility acessibility" onClick="aumentarFonte();"><img src="A+" alt="">+</button>
+
+            <button class="btn-acessibility acessibility" onClick="diminuirFonte();"><img src="A-" alt="">-</button>
+        </li>
+    </ul>
+</header>
+<header class="menu-response">
+    <img src="img\Rich Preto.png" alt="" class="logo">
+    <ul id="lista-responsive">
+        <button class="dropdown" onclick="openclose();">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div id="dropitems" class="opcaodrop">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="vantagens.html">Vantagens</a></li>
+            <li><a href="desvantagens.html">Desvantagens</a></li>
+            <li><a href="casesucesso.html">Cases de Sucesso</a></li>
+        </div>
+        <li class="opcao-acessibilidade">
+            <button class="btn-acessibility acessibility" onClick="aumentarFonte();"><img src="A+" alt="">+</button>
+
+            <button class="btn-acessibility acessibility" onClick="diminuirFonte();"><img src="A-" alt="">-</button>
+        </li>
+    </ul>
 </header>
 <body>
     <main>
@@ -30,8 +76,8 @@
             <div id="box">
                 <div class="box2">
                     <h2>Malefícios à saúde</h2>
-                    <p class="box-content"></p>
-                        Uma pesquisa americana, da PFEEF (2012), traz as implicações do estresse financeiro para a saúde: 29% das pessoas que têm problemas financeiros sofrem de ansiedade aguda e 23% tiveram depressão profunda, ambos contra 4% das pessoas que têm o orçamento organizado. Outro dado relevante é que 44% de pessoas com problemas financeiros sofrem de enxaqueca ou outras dores de cabeça contra 15% dos indivíduos que possuem as contas em dia; e 27% tiveram úlceras ou outro problema no aparelho digestivo, contra 8% dos planejados financeiramente. Veja a imagem abaixo.            
+                    <p class="box-content">
+                    Uma pesquisa americana, da PFEEF (2012), traz as implicações do estresse financeiro para a saúde: 29% das pessoas que têm problemas financeiros sofrem de ansiedade aguda e 23% tiveram depressão profunda, ambos contra 4% das pessoas que têm o orçamento organizado. Outro dado relevante é que 44% de pessoas com problemas financeiros sofrem de enxaqueca ou outras dores de cabeça contra 15% dos indivíduos que possuem as contas em dia; e 27% tiveram úlceras ou outro problema no aparelho digestivo, contra 8% dos planejados financeiramente. Veja a imagem abaixo.            
                     </p>  
                     <img src="img/desvantagens01.jpg" alt="Saude_x_Gestao">                                
                 </div>
@@ -79,5 +125,8 @@
     <iframe src="footer.html" frameborder="0" class="footer"></iframe>
     <!-- Fim Rodapé -->
     
+
+<script src="js/header.js"></script>
+<script src="js/acessibilidadeFonte.js"></script>
 </body>
 </html>
