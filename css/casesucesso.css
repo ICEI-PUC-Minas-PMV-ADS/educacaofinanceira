@@ -134,6 +134,9 @@ h2 {
 
 /*>>>>>> responsividade */
 @media screen and (max-width: 800px) {
+   html {
+  height: 100%;
+    }
   #depo {
     display: flex;
     flex-wrap: nowrap;
