@@ -27,8 +27,7 @@ height: 70px;
 body{
     background-image: linear-gradient(to bottom, white, #add8e6);
     height: 100%;
-    
-    
+    font-family: 'Open+Sans', sans-serif;
 }
 
 main{
