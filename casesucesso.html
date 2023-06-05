@@ -19,8 +19,54 @@
 </head>
 
 <body>
-    <header>
-        <iframe src="header.html" frameborder="0" class="header"></iframe>
+ <header class="menu1">
+        <img src="img\Rich Preto.png" alt="" class="logo">
+        <ul id="lista-cabecalho">
+
+            <li class="opcao-cabecalho"> <a
+                    class="link-opcao" href="index.html">Home</a></li>
+
+            <li class="opcao-cabecalho"><a 
+                    class="link-opcao" href="Dashboard.html">Dashboard</a></li>
+
+            <li class="opcao-cabecalho"><a
+                    class="link-opcao" href="vantagens.html">Vantagens</a></li>
+
+            <li class="opcao-cabecalho"><a 
+                    class="link-opcao" href="desvantagens.html">Desvantagens</a></li>
+
+            <li class="opcao-cabecalho"><a
+                    class="link-opcao" href="casessucesso.html">Cases de Sucesso</a></li>
+            <li class="opcao-acessibilidade">
+                <button class="btn-acessibility acessibility" onClick="aumentarFonte();"><img src="A+" alt="">+</button>
+
+                <button class="btn-acessibility acessibility" onClick="diminuirFonte();"><img src="A-" alt="">-</button>
+            </li>
+        </ul>
+    </header>
+    <header class="menu-response">
+        <img src="img\Rich Preto.png" alt="" class="logo">
+        <ul id="lista-responsive">
+            <button class="dropdown" onclick="openclose();">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div id="dropitems" class="opcaodrop">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="vantagens.html">Vantagens</a></li>
+                <li><a href="desvantagens.html">Desvantagens</a></li>
+                <li><a href="casessucesso.html">Cases de Sucesso</a></li>
+            </div>
+            <li class="opcao-acessibilidade">
+                <button class="btn-acessibility acessibility" onClick="aumentarFonte();"><img src="A+" alt="">+</button>
+
+                <button class="btn-acessibility acessibility" onClick="diminuirFonte();"><img src="A-" alt="">-</button>
+            </li>
+        </ul>
     </header>
     <main>
         <div class="background">
@@ -42,7 +88,7 @@
                 </section>
                 <section id="depo">
                     <div id="depo1">
-                        <img src="img/casesucesso04.jfif" alt="">
+                        <img src="img/casesucesso04.webp" alt="">
                         <p>RENAN GOMES <br><br>
                             “As dívidas começaram porque meu pai, que era quem bancava a minha faculdade, não conseguiu
                             mais arcar com os custos..."
@@ -92,6 +138,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/acessibilidadeFonte.js"></script>
     <!--Fim  R03-aumentar e diminuir fonte-->
+        
+  <script src="js/header.js"></script>
 
     <!-- Início Rodapé -->
     <iframe src="footer.html" frameborder="0" class="footer"></iframe>
