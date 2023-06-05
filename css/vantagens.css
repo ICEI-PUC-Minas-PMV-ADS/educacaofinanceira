@@ -40,6 +40,11 @@ main{
      height: 100%;
      display: flex;
 }
+.Menu{
+    display: block;
+    width: 100%;
+    background-color: #DDD;
+}
 #conteudo{
     display: block;
     float: left;
