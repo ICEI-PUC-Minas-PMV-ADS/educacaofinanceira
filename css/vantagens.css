@@ -24,11 +24,6 @@ body{
     font-size: 0.8rem;
     color: #000000;
 }
-header{
-    background-color: (--corPadraoAzul);
-    width:100%;
-    height:100px;  
-}
 main{
     height: max-content;
 }
