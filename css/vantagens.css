@@ -21,8 +21,7 @@ h2{
 body{
     background-image: linear-gradient(to bottom, white, #add8e6);
     font-family: 'Open+Sans', sans-serif;
-    font-size: 0.8rem;
-    color: #000000;
+    font-size: 0.8rem;    
 }
 header{
     background-color: (--corPadraoAzul);
