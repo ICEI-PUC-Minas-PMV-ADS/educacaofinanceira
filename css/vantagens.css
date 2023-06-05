@@ -29,7 +29,7 @@ header{
     height:100px;  
 }
 main{
-    height: max-content;
+
 }
 .background{
   background-image: linear-gradient(to bottom, white, #add8e6);
