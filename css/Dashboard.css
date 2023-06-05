@@ -27,17 +27,17 @@ h2{
     justify-content: center;
 }
 #graf2 h2{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     justify-content: left;
 }
 #fixas h2{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 #variaveis h2{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 #renda h2{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 p{
     position: absolute;
