@@ -31,10 +31,12 @@ header{
 main{
     height: max-content;
 }
+.background{
+   background-image: linear-gradient(to bottom, white, #add8e6);
+   background-size: 100%;
+}
 #container{
-    background-image: linear-gradient(to bottom, white, #add8e6);
-    background-size: 100%;
-    display: flex;
+ display: flex;
 }
 .Menu{
     display: block;
