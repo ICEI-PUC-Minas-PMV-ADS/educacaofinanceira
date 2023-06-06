@@ -13,15 +13,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .logo {
     width: 110px;
     height: 70px;
-    background-color: var(--corPadraoAzulEscuro);
+    background-color: none;
 }
 
 header {
@@ -33,43 +28,42 @@ header {
 }
 
 #lista-cabecalho {
-    display: flex !important;
-    width: 67% !important;
-    flex-wrap: wrap !important;
-    font-size: 0.8rem !important;
-    transition: none !important;
+    display: flex;
+    width: 76%;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    transition: none;
 }
-
-#lista-responsive {}
 
 .opcao-cabecalho {
-    color: #000000 !important;
-    list-style-type: none !important;
-    padding: 1rem !important;
-    box-sizing: border-box !important;
-    transition: none !important;
+    color: #000000;
+    list-style-type: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: none;
 }
+
 .opcao-cabecalho:hover {
-    background-color: var(--corPadraoAzul) !important;
-    transition: none !important;
+    background-color: var(--corPadraoAzul);
+    transition: none;
 }
 
 .opcao-acessibilidade {
-    color: #000000 !important;
-    list-style-type: none !important;
-    padding: 1rem !important;
-    box-sizing: border-box !important;
-    transition: none !important;
+    color: #000000;
+    list-style-type: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: none;
 }
 
 .link-opcao {
-    text-decoration: none !important;
-    transition: none !important;
+    text-decoration: none;
+    transition: none;
 }
 
 .link-opcao:hover {
-    text-decoration: underline black !important;
-    transition: none !important;
+    text-decoration: underline black;
+    transition: none;
 }
 
 .link-opcao:link {
@@ -88,7 +82,7 @@ header {
     transition: none;
 }
 
-@media (min-width:1110px) {
+@media (min-width:801px) {
     .menu-response {
         display: none;
     }
@@ -98,9 +92,11 @@ header {
     }
 }
 
+.menu-response{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-
-@media (max-width:1109px) {
+@media (max-width:800px) {
     .menu1 {
         display: none;
     }
@@ -117,15 +113,42 @@ header {
         margin-bottom: 5px;
 
     }
+
     button.dropdown {
-        background-color: #2b94b8;
+        background-color: white;
         border: none;
     }
-.opcaodrop{
-    display:none;
-}
-.dropitens:hover{
- background-color: var(--corPadraoAzulEscuro)
 
+    .opcaodrop {
+        display: none;
+        font-size: 15px;
+    }
+
+    .menu-response {
+        height: 0px;
+    }
+
+    .dropitems {
+        background-color: var(--corPadraoAzulEscuro);
+    }
+}
+@media (max-width:728px) {
+    .opcaodrop{
+        font-size: 18px;
+    }
+    ul#lista-responsive {
+        position: relative;
+        left: 30%;
+        list-style-type: none;
+    }
+
+}
+@media (max-width:400px){
+    ul#lista-responsive {
+        position: relative;
+        left: 30%;
+        list-style-type: none;
+        display: flex;
+        flex-direction : column
 }
 }
