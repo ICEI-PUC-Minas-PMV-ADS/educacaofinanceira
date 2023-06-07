@@ -26,18 +26,23 @@ h2{
     display: flex;
     justify-content: center;
 }
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
 #graf2 h2{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     justify-content: left;
 }
 #fixas h2{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 #variaveis h2{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 #renda h2{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 p{
     position: absolute;
@@ -163,4 +168,55 @@ img{
     #mural{
         width: 50%;
     }
+}
+/*Table*/
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  .tabela-wrapper {
+    display: flex;
+  }
+  
+  #tabela-gastos-fixos {
+    margin-right: 20px;
+  }
+#table  {
+    display: flex;
+    justify-content: center;
+}
+#table h2{
+    font-size: 0.8rem;
+}
+#table input{
+    width: 200px;
+    box-shadow: 0px 4px 6px -2px var(--corPadraoAzulEscuro);
+    border-radius: 10px;
+}
+button{
+    background-color: var(--corPadraoBranco);
+    width: 200px;
+    height: 50px;
+    font-size: 0.8rem;
+    border: 0;
+    box-shadow: 0px 4px 6px -2px var(--corPadraoAzulEscuro);
+    border-radius: 10px;
+
+}
+#table-result{
+    display: flex;
+    justify-content: center;
 }
