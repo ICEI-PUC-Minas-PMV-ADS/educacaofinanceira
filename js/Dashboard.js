@@ -1,3 +1,45 @@
+//Table
+function calcularSalarioTotal() {
+    var salario = parseFloat(document.getElementById("num11").value);
+    var bonificacao = parseFloat(document.getElementById("num12").value);
+    var investimento = parseFloat(document.getElementById("num13").value);
+  
+    var salarioTotal = salario + bonificacao + investimento;
+  
+    var tabelaGastosFixos = document.getElementById("tabela-gastos-fixos");
+    var gastosFixos = tabelaGastosFixos.getElementsByClassName("gasto-fixos");
+    var resultadosGastosFixos = tabelaGastosFixos.getElementsByClassName("resultado-gasto-fixos");
+  
+    for (var i = 0; i < gastosFixos.length; i++) {
+      var valorGastoFixo = parseFloat(gastosFixos[i].value);
+      var limiteGastoFixo = salario * 0.14;
+  
+      if (valorGastoFixo > limiteGastoFixo) {
+        resultadosGastosFixos[i].innerHTML = "Seus gastos não estão dentro do ideal";
+        resultadosGastosFixos[i].style.color = "red";
+      } else {
+        resultadosGastosFixos[i].innerHTML = "Seus gastos estão dentro do ideal para seu salário";
+        resultadosGastosFixos[i].style.color = "green";
+      }
+    }
+  
+    var tabelaGastosVariaveis = document.getElementById("tabela-gastos-variaveis");
+    var gastosVariaveis = tabelaGastosVariaveis.getElementsByClassName("gasto-variaveis");
+    var resultadosGastosVariaveis = tabelaGastosVariaveis.getElementsByClassName("resultado-gasto-variaveis");
+  
+    for (var j = 0; j < gastosVariaveis.length; j++) {
+      var valorGastoVariavel = parseFloat(gastosVariaveis[j].value);
+      var limiteGastoVariavel = salario * 0.08;
+  
+      if (valorGastoVariavel > limiteGastoVariavel) {
+        resultadosGastosVariaveis[j].innerHTML = "Seus gastos não estão dentro do ideal";
+        resultadosGastosVariaveis[j].style.color = "red";
+      } else {
+        resultadosGastosVariaveis[j].innerHTML = "Seus gastos estão dentro do ideal para seu salário";
+        resultadosGastosVariaveis[j].style.color = "green";
+      }
+    }
+  }
 // Renda
 const inputsRenda = document.querySelectorAll('#renda input');
 const resultadoRenda = document.getElementById('resultado');
