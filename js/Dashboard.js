@@ -1,45 +1,144 @@
-//Table
-function calcularSalarioTotal() {
-    var salario = parseFloat(document.getElementById("num11").value);
-    var bonificacao = parseFloat(document.getElementById("num12").value);
-    var investimento = parseFloat(document.getElementById("num13").value);
-  
-    var salarioTotal = salario + bonificacao + investimento;
-  
-    var tabelaGastosFixos = document.getElementById("tabela-gastos-fixos");
-    var gastosFixos = tabelaGastosFixos.getElementsByClassName("gasto-fixos");
-    var resultadosGastosFixos = tabelaGastosFixos.getElementsByClassName("resultado-gasto-fixos");
-  
-    for (var i = 0; i < gastosFixos.length; i++) {
-      var valorGastoFixo = parseFloat(gastosFixos[i].value);
-      var limiteGastoFixo = salario * 0.14;
-  
-      if (valorGastoFixo > limiteGastoFixo) {
-        resultadosGastosFixos[i].innerHTML = "Seus gastos não estão dentro do ideal";
-        resultadosGastosFixos[i].style.color = "red";
-      } else {
-        resultadosGastosFixos[i].innerHTML = "Seus gastos estão dentro do ideal para seu salário";
-        resultadosGastosFixos[i].style.color = "green";
-      }
+//Tabela
+    const inputMoradia = document.getElementById('num1');
+    const gastoMoradiaCell = document.querySelector('input[name="gasto-moradia"]').closest('td');
+
+    const inputSaude = document.getElementById('num2');
+    const gastoSaudeCell = document.querySelector('input[name="gasto-saude"]').closest('td');
+
+    const inputTransporte = document.getElementById('num3');
+    const gastoTransporteCell = document.querySelector('input[name="gasto-transporte"]').closest('td');
+
+    const inputHigiene = document.getElementById('num4');
+    const gastoHigieneCell = document.querySelector('input[name="gasto-higiene"]').closest('td');
+
+    const inputAlimentacao = document.getElementById('num5');
+    const gastoAlimentacaoCell = document.querySelector('input[name="gasto-alimentacao"]').closest('td');
+
+    function copiarValorFixas() {
+        const valorInputMoradia = inputMoradia.value;
+        const valorFloatMoradia = parseFloat(valorInputMoradia);
+
+        const valorInputAlimentacao = inputAlimentacao.value;
+        const valorFloatAlimentacao = parseFloat(valorInputAlimentacao);
+
+        const valorInputTransporte = inputTransporte.value;
+        const valorFloatTransporte = parseFloat(valorInputTransporte);
+
+        const valorInputSaude = inputSaude.value;
+        const valorFloatSaude = parseFloat(valorInputSaude);
+
+        const valorInputHigiene = inputHigiene.value;
+        const valorFloatHigiene = parseFloat(valorInputHigiene);
+
+        const eventoInput = new Event('input', { bubbles: true });
+        gastoMoradiaCell.querySelector('input').value = valorFloatMoradia;
+        gastoMoradiaCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoAlimentacaoCell.querySelector('input').value = valorFloatAlimentacao;
+        gastoAlimentacaoCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoTransporteCell.querySelector('input').value = valorFloatTransporte;
+        gastoTransporteCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoSaudeCell.querySelector('input').value = valorFloatSaude;
+        gastoSaudeCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoHigieneCell.querySelector('input').value = valorFloatHigiene;
+        gastoHigieneCell.querySelector('input').dispatchEvent(eventoInput);
     }
-  
-    var tabelaGastosVariaveis = document.getElementById("tabela-gastos-variaveis");
-    var gastosVariaveis = tabelaGastosVariaveis.getElementsByClassName("gasto-variaveis");
-    var resultadosGastosVariaveis = tabelaGastosVariaveis.getElementsByClassName("resultado-gasto-variaveis");
-  
-    for (var j = 0; j < gastosVariaveis.length; j++) {
-      var valorGastoVariavel = parseFloat(gastosVariaveis[j].value);
-      var limiteGastoVariavel = salario * 0.08;
-  
-      if (valorGastoVariavel > limiteGastoVariavel) {
-        resultadosGastosVariaveis[j].innerHTML = "Seus gastos não estão dentro do ideal";
-        resultadosGastosVariaveis[j].style.color = "red";
-      } else {
-        resultadosGastosVariaveis[j].innerHTML = "Seus gastos estão dentro do ideal para seu salário";
-        resultadosGastosVariaveis[j].style.color = "green";
-      }
+
+    inputMoradia.addEventListener('input', copiarValorFixas);
+    inputAlimentacao.addEventListener('input', copiarValorFixas);
+    inputTransporte.addEventListener('input', copiarValorFixas);
+    inputSaude.addEventListener('input', copiarValorFixas);
+    inputHigiene.addEventListener('input', copiarValorFixas);
+
+    const inputCompras = document.getElementById('num6');
+    const gastoComprasCell = document.querySelector('input[name="gasto-compras"]').closest('td');
+
+    const inputVestuario = document.getElementById('num7');
+    const gastoVestuarioCell = document.querySelector('input[name="gasto-vestuario"]').closest('td');
+
+    const inputEducacao = document.getElementById('num8');
+    const gastoEducacaoCell = document.querySelector('input[name="gasto-educacao"]').closest('td');
+
+    const inputEntretenimento = document.getElementById('num9');
+    const gastoEntretenimentoCell = document.querySelector('input[name="gasto-entretenimento"]').closest('td');
+
+    const inputViagens = document.getElementById('num10');
+    const gastoViagensCell = document.querySelector('input[name="gasto-viagens"]').closest('td');
+
+    function copiarValorVariaveis() {
+        const valorFloatCompras = parseFloat(inputCompras.value);
+        const valorFloatVestuario = parseFloat(inputVestuario.value);
+        const valorFloatEducacao = parseFloat(inputEducacao.value);
+        const valorFloatEntretenimento = parseFloat(inputEntretenimento.value);
+        const valorFloatViagens = parseFloat(inputViagens.value);
+
+        const eventoInput = new Event('input', { bubbles: true });
+        gastoComprasCell.querySelector('input').value = valorFloatCompras;
+        gastoComprasCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoVestuarioCell.querySelector('input').value = valorFloatVestuario;
+        gastoVestuarioCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoEducacaoCell.querySelector('input').value = valorFloatEducacao;
+        gastoEducacaoCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoEntretenimentoCell.querySelector('input').value = valorFloatEntretenimento;
+        gastoEntretenimentoCell.querySelector('input').dispatchEvent(eventoInput);
+
+        gastoViagensCell.querySelector('input').value = valorFloatViagens;
+        gastoViagensCell.querySelector('input').dispatchEvent(eventoInput);
     }
-  }
+
+    inputCompras.addEventListener('input', copiarValorVariaveis);
+    inputVestuario.addEventListener('input', copiarValorVariaveis);
+    inputEducacao.addEventListener('input', copiarValorVariaveis);
+    inputEntretenimento.addEventListener('input', copiarValorVariaveis);
+    inputViagens.addEventListener('input', copiarValorVariaveis);
+
+    function calcularSalarioTotal() {
+        var salario = parseFloat(document.getElementById("num11").value);
+        var bonificacao = parseFloat(document.getElementById("num12").value);
+        var investimento = parseFloat(document.getElementById("num13").value);
+      
+        var salarioTotal = salario + bonificacao + investimento;
+      
+        var tabelaGastosFixos = document.getElementById("tabela-gastos-fixos");
+        var gastosFixos = tabelaGastosFixos.getElementsByClassName("gasto-fixos");
+        var resultadosGastosFixos = tabelaGastosFixos.getElementsByClassName("resultado-gasto-fixos");
+      
+        for (var i = 0; i < gastosFixos.length; i++) {
+          var valorGastoFixo = parseFloat(gastosFixos[i].value);
+          var limiteGastoFixo = salario * 0.14;
+      
+          if (valorGastoFixo > limiteGastoFixo) {
+            resultadosGastosFixos[i].innerHTML = "Seus gastos não estão dentro do ideal";
+            resultadosGastosFixos[i].style.color = "red";
+          } else {
+            resultadosGastosFixos[i].innerHTML = "Seus gastos estão dentro do ideal para seu salário";
+            resultadosGastosFixos[i].style.color = "green";
+          }
+        }
+      
+        var tabelaGastosVariaveis = document.getElementById("tabela-gastos-variaveis");
+        var gastosVariaveis = tabelaGastosVariaveis.getElementsByClassName("gasto-variaveis");
+        var resultadosGastosVariaveis = tabelaGastosVariaveis.getElementsByClassName("resultado-gasto-variaveis");
+      
+        for (var j = 0; j < gastosVariaveis.length; j++) {
+          var valorGastoVariavel = parseFloat(gastosVariaveis[j].value);
+          var limiteGastoVariavel = salario * 0.08;
+      
+          if (valorGastoVariavel > limiteGastoVariavel) {
+            resultadosGastosVariaveis[j].innerHTML = "Seus gastos não estão dentro do ideal";
+            resultadosGastosVariaveis[j].style.color = "red";
+          } else {
+            resultadosGastosVariaveis[j].innerHTML = "Seus gastos estão dentro do ideal para seu salário";
+            resultadosGastosVariaveis[j].style.color = "green";
+          }
+        }
+      }
 // Renda
 const inputsRenda = document.querySelectorAll('#renda input');
 const resultadoRenda = document.getElementById('resultado');
