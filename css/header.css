@@ -132,23 +132,3 @@ header {
         background-color: var(--corPadraoAzulEscuro);
     }
 }
-@media (max-width:728px) {
-    .opcaodrop{
-        font-size: 18px;
-    }
-    ul#lista-responsive {
-        position: relative;
-        left: 30%;
-        list-style-type: none;
-    }
-
-}
-@media (max-width:400px){
-    ul#lista-responsive {
-        position: relative;
-        left: 30%;
-        list-style-type: none;
-        display: flex;
-        flex-direction : column
-}
-}
