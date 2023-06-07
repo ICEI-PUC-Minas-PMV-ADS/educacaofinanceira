@@ -191,20 +191,20 @@ table {
     display: flex;
   }
   
-  #tabela-gastos-fixos {
+#tabela-gastos-fixos {
     margin-right: 20px;
-  }
+    box-shadow: 0px 4px 6px -2px var(--corPadraoAzulEscuro);
+}
+#tabela-gastos-variaveis{
+    margin-left: 20px;
+    box-shadow: 0px 4px 6px -2px var(--corPadraoAzulEscuro);
+}
 #table  {
     display: flex;
     justify-content: center;
 }
 #table h2{
     font-size: 0.8rem;
-}
-#table input{
-    width: 200px;
-    box-shadow: 0px 4px 6px -2px var(--corPadraoAzulEscuro);
-    border-radius: 10px;
 }
 button{
     background-color: var(--corPadraoBranco);
@@ -219,4 +219,10 @@ button{
 #table-result{
     display: flex;
     justify-content: center;
+}
+#table input{
+    width: 60%;
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--corPadraoPreto);
 }
