@@ -183,6 +183,98 @@
                 <h2>Suas despesas variáveis não devem ultrapassar 30% das suas despesas</h2>
             </div>
         </section>
+                <h1>Tabela de Gastos Mensais</h1>
+        <p id="resultado-salario"></p>
+        <section id="table">
+            <div class="tabela-wrapper">
+                <div>
+                    <h1>Gastos Fixos</h>
+                        <h2>Cada categoria fixa não deve ultrapassar 14% das despesas</h2>
+                        <table id="tabela-gastos-fixos">
+                            <thead>
+                                <tr>
+                                    <th>Gasto</th>
+                                    <th>Valor</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Moradia</td>
+                                    <td><input type="number" class="gasto-fixos" name="gasto-moradia"></td>
+                                    <td><span class="resultado-gasto-fixos"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Saúde</td>
+                                    <td><input type="number" class="gasto-fixos" name="gasto-saude"></td>
+                                    <td><span class="resultado-gasto-fixos"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Transporte</td>
+                                    <td><input type="number" class="gasto-fixos" name="gasto-transporte"></td>
+                                    <td><span class="resultado-gasto-fixos"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Higiene</td>
+                                    <td><input type="number" class="gasto-fixos" name="gasto-higiene"></td>
+                                    <td><span class="resultado-gasto-fixos"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Alimentação</td>
+                                    <td><input type="number" class="gasto-fixos" name="gasto-alimentacao"></td>
+                                    <td><span class="resultado-gasto-fixos"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <span id="resultado-gastos-fixos"></span>
+                </div>
+
+                <div>
+                    <h1 class="titulo-gastos-variaveis">Gastos Variáveis</h1>
+                    <h2>Cada categoria variavel não deve ultrapassar 8% das despesas</h2>
+                    <table id="tabela-gastos-variaveis">
+                        <thead>
+                            <tr>
+                                <th>Gasto</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Compras</td>
+                                <td><input type="number" class="gasto-variaveis" name="gasto-compras"></td>
+                                <td><span class="resultado-gasto-variaveis"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Vestuário</td>
+                                <td><input type="number" class="gasto-variaveis" name="gasto-vestuario"></td>
+                                <td><span class="resultado-gasto-variaveis"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Educação</td>
+                                <td><input type="number" class="gasto-variaveis" name="gasto-educacao"></td>
+                                <td><span class="resultado-gasto-variaveis"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Entretenimento</td>
+                                <td><input type="number" class="gasto-variaveis" name="gasto-entretenimento"></td>
+                                <td><span class="resultado-gasto-variaveis"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Viagens</td>
+                                <td><input type="number" class="gasto-variaveis" name="gasto-viagens"></td>
+                                <td><span class="resultado-gasto-variaveis"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span id="resultado-gastos-variaveis"></span>
+                </div>
+            </div>
+        </section>
+        <div id="table-result">
+            <button id="calcular" onclick="calcularSalarioTotal()">Resumo</button>
+        </div>
     </main>
 
 
