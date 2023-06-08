@@ -226,3 +226,7 @@ button{
     box-shadow: none;
     color: var(--corPadraoPreto);
 }
+#gamb{
+    width: 100%;
+    height: 100px;
+}
