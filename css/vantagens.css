@@ -22,12 +22,11 @@ body{
     font-family: 'Open+Sans', sans-serif;
     font-size: 0.8rem;
     color: #000000;
+    height: 100%;
     background-image: linear-gradient(to bottom, white, #add8e6);
-    background-size: 100%;
-    height: 100%;    
+    background-size: 100%;    
 }
 header{
-
     width: 100%;
     height: 70px;  
 }
@@ -80,7 +79,7 @@ main iframe{
     float: right;
     width: 50%;
     height: 30vh;
-    margin: 20px;
+    margin: 20px;    
 }
 .header{
     width: 100%;  
@@ -88,25 +87,36 @@ main iframe{
   }
 
   /*>>>>>> responsividade */
-  @media (max-width: 800px) {
-   Aside {width: 100%; float: none;
-
+  @media (max-width: 800px) 
+  {
+   Aside {
+    width: 100%;
+    float: none;
+    height: 30vh;
     }
+    body{
+        background-size: contain;
+        }
     #imagem{
         float: none;
         width: 50%;
+        height: max-content;        
     }
    #conteudo2{
     float: none;
-    width: 50%;
-
+    width: 90%;
+    height: 40vh;
    }
-
-   #video iframe{
+   #conteudo{
+    width: 90%;
+    height: 20vh;
+    
+   }
+    #video iframe{
+    float: none;
     width: 50%;
     height: max-content;
     text-align: justify;
-    margin-top: 10vh;
-    padding: 5px;    
-   }
-}
+    margin-top: 10vh;            
+   } 
+ }
