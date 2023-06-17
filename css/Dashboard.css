@@ -26,6 +26,7 @@ h1, #intro p, #subtitle {
 }
 #subtitle {
     margin-bottom: 3rem;
+}
 h2{
     padding: 20px;
     color: var(--corPadraoCinza);
