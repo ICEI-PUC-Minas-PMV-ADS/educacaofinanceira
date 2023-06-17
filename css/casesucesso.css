@@ -43,7 +43,10 @@ html {
   margin: 0px auto;
 }
 #intro h1 {
-  padding-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5rem;
+    display: block;
 }
 
 
