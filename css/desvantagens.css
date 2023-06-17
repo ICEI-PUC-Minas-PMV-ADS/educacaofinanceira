@@ -27,6 +27,7 @@ body{
 }
 h1 {
     display: block;
+    color: red;
 }
 main{
     flex: 1;
