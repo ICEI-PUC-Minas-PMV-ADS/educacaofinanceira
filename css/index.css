@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-* {
-  font-family: 'Open+Sans', sans-serif;
-}
-body, html {
-  height: 100%;
-}
-
-body {
-  background-image: linear-gradient(to bottom, white, #add8e6);
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --corPadraoAzul: #add8e6;
   --corPadraoAzulClaro: #bbd5dd;
@@ -22,8 +9,19 @@ body {
   --corPadraoCinza: #7b7a7b;
   --fontTitle: #000000;
   --legend: #000000;
-  font-size: 1.3rem;
+}
+
+body, html {
+  height: 100%;
+  font-size: 12px;
   line-height: 1.5;
+  font-family: 'Open+Sans', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, white, #add8e6);
+  margin: 0;
+  padding: 0;
 }
 
 .pag1,
@@ -45,7 +43,7 @@ body {
   margin-right: 10px;
 }
 
-.pag1 h2,
+/* .pag1 h2,
 .pag2 h2,
 .pag3 h2,
 .pag4 h2,
@@ -53,8 +51,8 @@ body {
 .pag2 p,
 .pag3 p,
 .pag4 p {
-  font-size: 0.8rem;
-}
+  font-size: 12px;
+} */
 
 .menuInteracao {
   display: flex;
