@@ -18,7 +18,7 @@ body{
     font-family:  'Open+Sans', sans-serif;    
     font-size: 12px; 
 }
-h1, #introp {
+h1, #intro p {
     text-align: center;
     padding: 20px;
     line-height: 1.5rem;
