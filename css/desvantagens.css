@@ -28,8 +28,8 @@ body{
 h1 {
     width: 100%;
     display: block;
-    text-aligh: center;
-    color: green;
+    text-align: center;
+    color: red;
 }
 main{
     flex: 1;
