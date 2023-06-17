@@ -154,12 +154,12 @@ img{
     }
 }
 /*Table*/
-    div table {
+/*     div table {
         margin-left: auto;
         margin-right: auto;
         width: 90%;
         border: 1px solid red;
-    }
+    } */
 
 table {
     border-collapse: collapse;
