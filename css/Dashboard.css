@@ -137,6 +137,7 @@ img{
     #graf1, #intro p, #subtitle{
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
     #copo6 {
         width: 80%;
