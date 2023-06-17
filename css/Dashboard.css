@@ -24,8 +24,8 @@ h1, #intro p {
     line-height: 1.5rem;
     clear: both;
 }
-#fixas h2 {
-    clear: both;
+#subtitle {
+    display: block;
 h2{
     padding: 20px;
     color: var(--corPadraoCinza);
