@@ -18,14 +18,12 @@ body{
     font-family:  'Open+Sans', sans-serif;    
     font-size: 12px; 
 }
-h1, #intro p {
+h1, #intro p, #subtitle {
     text-align: center;
     padding: 20px;
     line-height: 1.5rem;
     display: block;
-}
-#subtitle {
-    display: block;
+    clear: both;
     color: red;
 }
 h2{
