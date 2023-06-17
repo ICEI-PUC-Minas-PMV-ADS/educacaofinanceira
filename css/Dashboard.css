@@ -157,7 +157,8 @@ img{
 table {
     border-collapse: collapse;
     margin-bottom: 20px;
-    width: 60%;
+    width: 80%;
+    align: center;
   }
   
   th, td {
