@@ -22,9 +22,7 @@ h1, #intro p, #subtitle {
     text-align: center;
     padding: 20px;
     line-height: 1.5rem;
-    display: block;
-    clear: both;
-    color: red;
+    width: 100%;
 }
 h2{
     padding: 20px;
@@ -60,7 +58,7 @@ img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 10px;
+    margin-top: 10rem;
     transition: all 1s linear;
     
 }
