@@ -14,8 +14,6 @@
     --corPadraoCinza: #7b7a7b;
     --fontTitle: #000000;
     --legend: #000000;
-    font-family: 'Open+Sans', sans-serif;
-    font-size: 1.3rem;
 }
 
 /* Componente que abrange conteúdo */
@@ -32,7 +30,8 @@ footer {
     background-color: var(--corPadraoAzulEscuro);
     color: var(--corPadraoAzulClaro);
     -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
-    font-size: 0.8rem;
+    font-size: 12px;
+    font-family: 'Open+Sans', sans-serif;
 }
 
 #footerImg {
