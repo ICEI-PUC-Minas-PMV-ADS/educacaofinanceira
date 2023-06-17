@@ -22,6 +22,7 @@ h1, #intro p {
     text-align: center;
     padding: 20px;
     line-height: 1.5rem;
+    display: block;
 }
 
 h2{
