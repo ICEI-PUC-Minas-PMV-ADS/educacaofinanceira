@@ -30,6 +30,7 @@ h1 {
     display: block;
     text-align: center;
     padding: 20px;
+    font-size: 24px;
 }
 main{
     flex: 1;
