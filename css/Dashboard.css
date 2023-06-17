@@ -12,11 +12,11 @@
     --corPadraoCinza: #7b7a7b;
     --fontTitle: #000000;
     --legend: #000000;
-    font-family: 'Open+Sans', sans-serif;
 }
 body{
     background-image: linear-gradient(to bottom, white, #add8e6);
-    font-family:  'Open+Sans', sans-serif;                                             ;
+    font-family:  'Open+Sans', sans-serif;    
+    font-size: 12px;
     
 }
 
@@ -26,16 +26,16 @@ h2{
     display: flex;
     justify-content: center;
 }
-h1{
+h2{
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 #graf2 h2{
-    font-size: 0.7rem;
+/*     font-size: 0.7rem; */
     justify-content: left;
 }
-#fixas h2{
+/* #fixas h2{
     font-size: 0.9rem;
 }
 #variaveis h2{
@@ -43,17 +43,17 @@ h1{
 }
 #renda h2{
     font-size: 0.9rem;
-}
+} */
 p{
     position: absolute;
-    font-size: 1.8rem;
+/*     font-size: 1.8rem; */
     font-weight: bold;
     color: var(--corPadraoCinza);
 }
 input{
     
     text-align: center;
-    font-size: 1rem;
+/*     font-size: 1rem; */
     color: var(--corPadraoAzulEscuro);
     border: 0;
     font-weight: bold;
@@ -203,14 +203,14 @@ table {
     display: flex;
     justify-content: center;
 }
-#table h2{
+/* #table h2{
     font-size: 0.8rem;
-}
+} */
 button{
     background-color: var(--corPadraoBranco);
     width: 200px;
     height: 50px;
-    font-size: 0.8rem;
+/*     font-size: 0.8rem; */
     border: 0;
     box-shadow: 0px 4px 6px -2px var(--corPadraoAzulEscuro);
     border-radius: 10px;
