@@ -154,19 +154,12 @@ img{
     }
 }
 /*Table*/
-.containerTable {
-    width: 80%;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-/*     align-items: center; */
-    }
-
 table {
     border-collapse: collapse;
     margin-bottom: 20px;
-    width: 100%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   th, td {
