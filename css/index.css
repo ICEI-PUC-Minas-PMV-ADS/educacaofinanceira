@@ -43,17 +43,6 @@ body {
   margin-right: 10px;
 }
 
-/* .pag1 h2,
-.pag2 h2,
-.pag3 h2,
-.pag4 h2,
-.pag1 p,
-.pag2 p,
-.pag3 p,
-.pag4 p {
-  font-size: 12px;
-} */
-
 .menuInteracao {
   display: flex;
   justify-content: center;
