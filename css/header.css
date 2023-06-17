@@ -39,6 +39,7 @@ header {
     padding: 1rem;
     box-sizing: border-box;
     transition: none;
+    text-decoration: none;
 }
 
 .opcao-cabecalho:hover {
