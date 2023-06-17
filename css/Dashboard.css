@@ -24,12 +24,9 @@ h2{
     color: var(--corPadraoCinza);
     display: flex;
     justify-content: center;
-}
-h2{
-    display: flex;
-    justify-content: center;
     margin: 10px;
 }
+
 #graf2 h2{
     justify-content: left;
 }
@@ -160,7 +157,7 @@ img{
 table {
     border-collapse: collapse;
     margin-bottom: 20px;
-    width: 80%;
+    width: 60%;
   }
   
   th, td {
