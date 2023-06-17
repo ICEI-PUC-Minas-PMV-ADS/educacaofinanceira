@@ -5,6 +5,9 @@
 
 body {
     align-items: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 /*cores e fontes a definir*/
@@ -12,9 +15,6 @@ body {
     --fontText: #000000;
     --fontTitle: #000000;
     --legend: #000000;
-    font-size: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
 }
 
 .defaultTemplateMenu {
