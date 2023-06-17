@@ -16,7 +16,6 @@
 .header{
 width: 100%;    
 height: 70px;
-      
 }
 
 body{
@@ -26,7 +25,9 @@ body{
     font-size: 12px;
     line-height: 1.5;
 }
-
+h1 {
+    display: block;
+}
 main{
     flex: 1;
     display: flex;
@@ -58,10 +59,7 @@ aside ul{
 #intro{      
     height: 100%;
     padding: 10px 25px;
-    text-align: justify;
-    
-    
-  
+    text-align: justify;  
 }
 
 #box{
@@ -91,9 +89,7 @@ aside a{
 aside a:hover{
     cursor: pointer;
     text-decoration: underline;
-    color: var(--corPadraoAzulEscuro);
-    
-
+    color: var(--corPadraoAzulEscuro);    
 }
 
 aside > ul#links{
@@ -106,7 +102,6 @@ ul#links {
     display: inline-block;
     width: 100%;
     line-height: 25px;
-    
 }
 
 div.box2 > img,
