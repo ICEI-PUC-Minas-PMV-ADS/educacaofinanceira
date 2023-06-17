@@ -1,9 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    
-    
-
 }
 :root {
     --corPadraoAzul: #add8e6;
@@ -13,11 +10,7 @@
     --corPadraoBranco: #fbfeff;
     --corPadraoCinza: #7b7a7b;
     --fontTitle: #000000;
-    --legend: #000000;
-    font-family: 'Open+Sans', sans-serif;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    
+    --legend: #000000;   
 }
 
 .header{
@@ -29,6 +22,9 @@ height: 70px;
 body{
     background-image: linear-gradient(to bottom, white, #add8e6);
     height: 100%;    
+    font-family: 'Open+Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 main{
