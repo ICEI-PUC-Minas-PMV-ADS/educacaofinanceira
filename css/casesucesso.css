@@ -42,11 +42,9 @@ html {
   width: 60%;
   margin: 0px auto;
 }
-#intro h1 {
+h1 {
     text-align: center;
     padding: 20px;
-    line-height: 1.5rem;
-    display: block;
 }
 
 
