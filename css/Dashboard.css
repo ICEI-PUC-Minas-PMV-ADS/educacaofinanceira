@@ -158,6 +158,7 @@ img{
         margin-left: auto;
         margin-right: auto;
         width: 90%;
+        border: 1px solid red;
     }
 
 table {
