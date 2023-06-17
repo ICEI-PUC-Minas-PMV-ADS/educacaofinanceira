@@ -24,6 +24,9 @@ h1, #intro p, #subtitle {
     line-height: 1.5rem;
     width: 100%;
 }
+#intro p {
+    width: 80%;
+}
 #subtitle {
     margin-top: 10rem;
 }
