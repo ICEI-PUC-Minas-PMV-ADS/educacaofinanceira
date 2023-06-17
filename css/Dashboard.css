@@ -18,14 +18,18 @@ body{
     font-family:  'Open+Sans', sans-serif;    
     font-size: 12px; 
 }
-h1, #intro p, #subtitle {
+#intro p, #subtitle {
     text-align: center;
     padding: 20px;
     line-height: 1.5rem;
     width: 100%;
 }
+h1, h2 #subtitle {
+    width: auto;
+}
 #intro p {
     width: 80%;
+    margin-left: 10%;
 }
 #subtitle {
     margin-top: 10rem;
