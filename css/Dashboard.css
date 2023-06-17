@@ -25,7 +25,7 @@ h1, #intro p, #subtitle {
     width: 100%;
 }
 #subtitle {
-    margin-bottom: 3rem;
+    margin-top: 8rem;
 }
 h2{
     padding: 20px;
@@ -118,7 +118,7 @@ img{
 
 /*Media queries*/
 @media(max-width: 480px){
-    #graf1{
+    #graf1,#intro p, #subtitle{
         display: flex;
         flex-direction: column;
     }
@@ -134,7 +134,7 @@ img{
     }
 }
 @media (min-width: 481px)and (max-width: 825px){
-    #graf1{
+    #graf1, #intro p, #subtitle{
         display: flex;
         flex-direction: column;
     }
