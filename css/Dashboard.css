@@ -185,11 +185,8 @@ table {
 }
 #table  {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 90%;
-    border: 1px solid;
-/*     margin-right: auto;
-    margin-left: auto; */
 }
 button{
     background-color: var(--corPadraoBranco);
