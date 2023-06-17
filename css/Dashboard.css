@@ -24,6 +24,8 @@ h1, #intro p, #subtitle {
     line-height: 1.5rem;
     width: 100%;
 }
+#subtitle {
+    margin-bottom: 3rem;
 h2{
     padding: 20px;
     color: var(--corPadraoCinza);
@@ -58,7 +60,6 @@ img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 10rem;
     transition: all 1s linear;
     
 }
