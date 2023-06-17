@@ -132,6 +132,9 @@ img{
         flex-direction: column;
         padding: 20px;
     }
+    #subtitle {
+    margin-top: 18rem;
+    }
     #copo1, #copo2{
         width: 90%;
     }
@@ -148,6 +151,9 @@ img{
         display: flex;
         flex-direction: column;
         padding: 20px;
+    }
+    #subtitle {
+    margin-top: 18rem;
     }
     #copo6 {
         width: 80%;
