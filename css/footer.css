@@ -17,24 +17,15 @@
 }
 
 /* Componente que abrange conteúdo */
-/* footer {
+footer {
     display: flex;
     justify-content: space-evenly;
-} */
+}
 footer{
     width: 100%;
     margin: auto;
-    bottom: 0;
-    height: 8vh;
-    background-color: var(--corPadraoAzulEscuro);
-    color: var(--corPadraoAzulClaro);
-/*     -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza); */
-    font-size: 12px;
-    font-family: 'Open+Sans', sans-serif;
-    display: flex;
-    justify-content: space-around;
 }
-/* .footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -45,7 +36,7 @@ footer{
     -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
     font-size: 12px;
     font-family: 'Open+Sans', sans-serif;
-} */
+}
 
 #footerImg {
     height: 90vh;
