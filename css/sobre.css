@@ -1,0 +1,35 @@
+/*>>>>>> padrões e cabeçalho */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --corPadraoAzul: #add8e6;
+  --corPadraoAzulClaro: #bbd5dd;
+  --corPadraoAzulEscuro: #2b94b8;
+  --corPadraoPreto: #000000;
+  --corPadraoBranco: #fbfeff;
+  --corPadraoCinza: #7b7a7b;
+  --fontTitle: #000000;
+  --legend: #000000;
+}
+html {
+    height: 100%;
+    font-family: "Open+Sans", sans-serif;
+}
+.background {
+  background-image: linear-gradient(to bottom, white, #add8e6);
+  background-size: 100%;  
+  font-size: 12px;
+}
+.header{
+    width: 100%;  
+    height: 70px; 
+}
+
+
+/*>>>>>> conteudo */
+p {
+  text-align: center;
+  width: 100%;
+}
