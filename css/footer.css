@@ -28,9 +28,11 @@ footer{
     height: 8vh;
     background-color: var(--corPadraoAzulEscuro);
     color: var(--corPadraoAzulClaro);
-    -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza);
+/*     -webkit-box-shadow: 0 -1px 8px var(--corPadraoCinza); */
     font-size: 12px;
     font-family: 'Open+Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
 }
 /* .footer {
     position: fixed;
