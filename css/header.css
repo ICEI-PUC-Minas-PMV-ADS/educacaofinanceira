@@ -80,7 +80,9 @@ header {
     color: var(--corPadraoAzulEscuro);
     transition: none;
 }
-
+a {
+    text-decoration: none;
+}
 @media (min-width:801px) {
     .menu-response {
         display: none;
