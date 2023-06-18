@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talita Fernandes Silva">
+    <meta name="description" content="Educação Financeira - Web Site">
+    <meta name="keywords" content="html e css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
+    <title>Educação Financeira</title>
+    <link rel="stylesheet" href="css/casesucesso.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/acessibilidadeFonte.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Sobre</title>
+</head>
+<body>
+    <header class="menu1">
+        <img src="img\Rich Preto.png" alt="" class="logo">
+        <ul id="lista-cabecalho">
+            <li class="opcao-cabecalho"> <a class="link-opcao" href="index.html">Home</a></li>
+            <li class="opcao-cabecalho"><a class="link-opcao" href="sobre.html">Sobre</a></li>
+            <li class="opcao-cabecalho"><a class="link-opcao" href="Dashboard.html">Dashboard</a></li>
+            <li class="opcao-cabecalho"><a class="link-opcao" href="vantagens.html">Vantagens</a></li>
+            <li class="opcao-cabecalho"><a class="link-opcao" href="desvantagens.html">Desvantagens</a></li>
+            <li class="opcao-cabecalho"><a class="link-opcao" href="casesucesso.html">Cases de Sucesso</a></li>
+            <li class="opcao-acessibilidade">
+                <button class="btn-acessibility acessibility" onClick="aumentarFonte();"><img src="A+" alt="">+</button>
+                <button class="btn-acessibility acessibility" onClick="diminuirFonte();"><img src="A-" alt="">-</button>
+            </li>
+        </ul>
+    </header>
+    <header class="menu-response">
+        <img src="img\Rich Preto.png" alt="" class="logo">
+        <ul id="lista-responsive">
+            <button class="dropdown" onclick="openclose();">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div id="dropitems" class="opcaodrop">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="vantagens.html">Vantagens</a></li>
+                <li><a href="desvantagens.html">Desvantagens</a></li>
+                <li><a href="casesucesso.html">Cases de Sucesso</a></li>
+            </div>
+            <li class="opcao-acessibilidade">
+                <button class="btn-acessibility acessibility" onClick="aumentarFonte();"><img src="A+" alt="">+</button>
+                <button class="btn-acessibility acessibility" onClick="diminuirFonte();"><img src="A-" alt="">-</button>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div> <h1>Sobre</h1></div>
+        <div class="background">
+            <div id="container">
+                <section id="intro">
+                    <p class="acessibilidade">
+                        Página em construção para entrega do vídeo solicitado na etapa 5.
+                    </p>
+                </section>
+    </main>
+    <!--Início R02-Libras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script> new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <!--Fim R02-Libras-->
+
+    <!--Início R03-aumentar e diminuir fonte-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/acessibilidadeFonte.js"></script>
+    <!--Fim  R03-aumentar e diminuir fonte-->
+        
+    <script src="js/header.js"></script>
+
+    <!-- Início Rodapé -->
+    <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+    <!-- Fim Rodapé -->
+</body>
+</html>
