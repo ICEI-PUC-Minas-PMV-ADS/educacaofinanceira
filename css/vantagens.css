@@ -40,10 +40,10 @@ header{
 main{
     height: max-content;
 }
-#container{
-     width: 100%;
+#Container{
+     width: 80%;
      height: 100%;
-     display: flex;
+     margin-left: 10%;
 }
 .Menu{
     display: block;
