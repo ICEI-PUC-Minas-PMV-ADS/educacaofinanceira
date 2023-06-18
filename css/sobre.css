@@ -19,7 +19,7 @@ html {
 }
 .background {
   background-image: linear-gradient(to bottom, white, #add8e6);
-  background-size: 100%;  
+  heigth: 100vh;
   font-size: 12px;
 }
 .header{
