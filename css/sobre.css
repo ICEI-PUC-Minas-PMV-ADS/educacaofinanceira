@@ -18,7 +18,10 @@ html {
     font-family: "Open+Sans", sans-serif;
 }
 body {
-background-image: linear-gradient(to bottom, white, #add8e6);
+    background-image: linear-gradient(to bottom, white, #add8e6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .background {
   height: 100vh;
@@ -82,6 +85,9 @@ h1 {
   background-color: var(--corPadraoAzulClaro);
   max-width: 100%;
   height: auto;
+}
+#fistImg {
+    margin-top: 100px;
 }
 }
  
