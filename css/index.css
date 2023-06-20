@@ -29,7 +29,19 @@ h1 {
   text-align: center;
   padding: 20px;
   font-size: 24px;
+  color: var(--corPadraoAzulEscuro);
+  margin-top: 40px;
 }
+
+#titulo {
+  opacity: 0;
+  transition: opacity 5s ease-in;
+}
+
+#titulo.mostrar {
+  opacity: 1;
+}
+
 
 h3 {
   padding: 5rem;
@@ -39,8 +51,8 @@ h3 {
   height: 10vh;
   width: 80%;
   margin: auto;
+  padding: 20px;
   text-align: center;
-  color: var(--corPadraoCinza);
 }
 
 .pag1,
@@ -59,12 +71,13 @@ h3 {
 .pag4 img {
   width: 90px;
   height: 90px;
+
 }
 
 .menuInteracao {
   display: flex;
   flex-wrap: wrap;
-  height: 60vh;
+  height: max-content;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -122,6 +135,6 @@ a:link {
     padding: 80px;
   }
   .container2 {
-    margin-bottom: 25rem;
+    margin-bottom: 15rem;
   }
 }
