@@ -20,8 +20,9 @@ body, html {
 
 body {
   background-image: linear-gradient(to bottom, white, #add8e6);
-  margin: 0;
-  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -69,6 +70,13 @@ h3 {
   text-align: center;
 }
 
+.menuInteracao img:hover {
+  transform: scale(1.5);
+  padding-bottom: 20px;
+  box-shadow: var(--corPadraoCinza) 2px 2px 2px;
+  border-radius: 5%;
+}
+
 .container1,
 .container2 {
   width: 32%;
@@ -104,7 +112,16 @@ a:link {
   color: black
 }
 @media (max-width:728px) {
-body{
-  display:flex;
+  .container1,
+  .container2 {
+  flex-basis: 100%;
+  text-align: center;
+  height: max-content;
 }
+  .container1 {
+    padding: 80px;
+  }
+  .container2 {
+    margin-bottom: 15rem;
+  }
 }
