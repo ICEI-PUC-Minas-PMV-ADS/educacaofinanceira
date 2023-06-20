@@ -30,7 +30,9 @@ body{
     color: #000000;
     height: 100%;
     background-image: linear-gradient(to bottom, white, #add8e6);
-    background-size: 100%;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;   
     line-height: 1.5rem;
 }
 header{
