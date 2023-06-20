@@ -24,6 +24,24 @@ body {
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  padding: 5rem;
+
+}
+#intro {
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: var(--corPadraoCinza);
+}
+
 .pag1,
 .pag2,
 .pag3,
@@ -40,20 +58,24 @@ body {
 .pag4 img {
   width: 90px;
   height: 90px;
-  margin-right: 10px;
 }
 
 .menuInteracao {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  height: 60vh;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 .container1,
 .container2 {
   width: 32%;
   padding: 22px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
 }
 
 .logo {
