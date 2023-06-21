@@ -24,7 +24,7 @@ body {
     background-size: cover;
 }
 .background {
-  height: 100vh;
+  height: 80vh;
   font-size: 12px;
   line-height: 1.5rem;
 }
@@ -48,6 +48,7 @@ h1 {
   height: 10vh;
   width: 80%;
   margin: auto;
+  padding-top: 40px;
   text-align: center;
   color: var(--corPadraoCinza);
 }
@@ -58,10 +59,11 @@ h1 {
 .cards{
   display: flex;
   flex-wrap: wrap;
-
+  padding-top: 5rem;
   height: 60vh;
   width: 80%;
   margin: auto;
+  padding-top: 3rem;
 }
 .card{
   height: 50vh;
